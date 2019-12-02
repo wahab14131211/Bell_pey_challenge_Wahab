@@ -6,7 +6,8 @@ def wahab_predwar (x,y,z,b,r):
 
     #if player is confident in the accuracy of b, calculate the risk of cooperating by determining the average number of tokens lost by cooperating
         #The function to calcuate this will return a value from 0.5 to 4. So, if the value is small, cooperate.
-    
+        #for any individual round, the player gets the most tokens by choosing to betray. Since this branch will be triggered in the later stages of the game where the benfits from cooperating start to deminish, this check will (on average) choose to betray
+
     #if player is NOT confident in the accuracy of b, check if opponent has a strong tendency to cooperate or betray (ignore this check if game has just started, and b==0)
         #if z-y is larger than y-x, it would be better to betray, otherwise cooperate (since betray heavy players will be filtered out by this point, the player does not need to worry about the exact value of x)
 
